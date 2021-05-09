@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>All about covid</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<style>
+    body{
+        background-image: url('/static/covid.jpg');
+    }
+    img{
+        opacity: 0.2;
+    }
+    h2,p,h3,label{
+        color:white;
+    }
+    .container{
+        margin: 200px;
+    }
+    .navbar{
+  background-color: black;
+  color: white;
+}
+</style>
+    <script type="text/javascript">
+        function newsUpdates() {
+            var state = document.getElementById('state').value;
+            var start = "https://www.google.com/search?q=covid+news+updates+";
+            var end = "&rlz=1C1CHZL_enIN830IN830&oq=covid&aqs=chrome.0.69i59l3j0i131i433l4j0i131i433i457j0i402l2.4418j0j15&sourceid=chrome&ie=UTF-8";
+            var url_for_search = start.concat(state,end);
+            document.write(url_for_search);
+            
+            location.href = url_for_search;
+        };
+    </script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <h2 class="navbar-brand">COVID ASSIST</h2>
+       
+       
+        <a class="nav-link" href="/">Home </a>
+      </nav>
+    <div class="container">
+        <h2>Covid News Updates</h2><br>
+        <form id="form" onsubmit="return false;">
+            <label for="state">Enter your State :</label>
+            <input type="text" id="state" /><br><br>
+            <button class="btn btn-outline-warning" data-toggle="collapse" onclick="newsUpdates();">Search</button>
+        </form>
+            
+        </div>
+      
+    </div>
+
+</body>
+
+</html>
