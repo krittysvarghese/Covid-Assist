@@ -29,3 +29,13 @@ Other Frameworks: Flask
 Hosting Service: Heroku
 
 
+HOW TO RUN THE CODE:
+
+1. Clone this repository.
+2. Install Flask using the command: pip install Flask
+3. Install Beautiful Soup using the command: pip install beautifulsoup4
+4. Install lxml using the command: pip install lxml
+5. Run the project using the command: python -m flask run
+6. Open the project in your browser using url given.
+
+Demo : https://covid-assist-all-you-need.herokuapp.com/
